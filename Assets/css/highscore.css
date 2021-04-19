@@ -1,19 +1,23 @@
+/* Styling for page */
 * {
     font-family: 'Roboto Slab', serif;
     list-style-type: none;
+    background-color: black;
 }
 
+/* Header h1 Styling */
 header h1 {
     font-size: 3rem;
     color: purple;
 }
 
+/* Body Styling */
 body {
     display: block;
-    background-color: black;
     text-align: center;
 }
 
+/* High Scores Styling */
 .record-highscore {
     color: white;
     font-size: 2rem;
@@ -21,10 +25,12 @@ body {
     margin: 10px;
 }
 
+/* List Styling */
 ol li {
     text-align: center;
 }
 
+/* Button Styling */
 button {
     background-color: purple;
     color: white;
@@ -34,6 +40,7 @@ button {
     border: 1px solid white;
 }
 
+/* Button Styling with Hover */
 button:hover {
     background-color: black;
     color: white;
