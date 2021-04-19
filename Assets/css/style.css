@@ -1,7 +1,9 @@
+/* Styling for page */
 * {
     background-color: black;
     font-family: 'Roboto Slab', serif;
 }
+
 /*  Fix high score at the top of the page */
 header {
     position: fixed;
@@ -9,19 +11,20 @@ header {
     left: 3%;
 }
 
-
-
+/* High Score Styling and Placement */
 .high-score {
     font-size: 2rem;
     color: white;
     text-decoration: none;
 }
 
+/* High Score hover */
 .high-score:hover {
     background-color: white;
     color: black;
 }
 
+/* High Score Focus */
 .high-score:focus {
     background-color: white;
     color: black;
@@ -54,6 +57,7 @@ h1 {
     color: white;
 }
 
+/* Button Styling */
 button {
     background-color: black;
     color: white;
@@ -63,6 +67,7 @@ button {
     border: 1px solid white;
 }
 
+/* Button Hover Styling */
 button:hover {
     background-color: purple;
     color: white;
@@ -85,6 +90,7 @@ button:hover {
     border: 5px solid black;
 }
 
+/* Hover Styling for Options */
 .a:hover,
 .b:hover,
 .c:hover,
@@ -93,6 +99,7 @@ button:hover {
     color: white;
 }
 
+/* Styling for Game Answer when Incorrect */
 .game-answer {
     font-weight: bolder;
     color: purple;
