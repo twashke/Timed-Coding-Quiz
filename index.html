@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- CSS Style file to use -->
+    <link rel="stylesheet" href="Assets/css/style.css"/>
+    <title>Timed Coding Quiz</title>
+</head>
+<!-- High Scores Section -->
+    <header>
+        <h2><a href="highscores.html" class="high-score">High Score</a></h2>
+    </header>
+    <section>
+        <!-- Game section -->
+        <div class="game" style="text-align:center">
+            <h1>Javascript Coding Quiz</h1>
+            <!-- Game start button -->
+            <div class="game-start"><button>Start Game</button></div> 
+            <!-- Timer Section -->
+            <h2 class="time">Can you beat the clock?</h2>
+            <!-- Question Section -->
+            <div class="game-question">Press Start Button to Play!</div>
+            <!-- Game Choices Section -->
+            <div class="game-choices">
+                <!-- Answer Choices Section -->
+                <ul>
+                    <li id = "0" class = "a"></li>
+                    <li id = "1" class = "b"></li>
+                    <li id = "2" class = "c"></li>
+                    <li id = "3" class = "d"></li>
+                </ul>
+            </div>
+            <!-- User answer section - Incorrect or Correct -->
+            <div class="game-answer"></div>
+        </div>
+    </section>
+    <!-- Javascript file to use -->
+    <script src="Assets/js/script.js" default></script>
+</body>
+</html>

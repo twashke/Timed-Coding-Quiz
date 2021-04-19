@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    list-style-type: none;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: purple;
+}
+
+body {
+    display: block;
+    background-color: black;
+    text-align: center;
+}
+
+.record-highscore {
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+ol li {
+    text-align: center;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
