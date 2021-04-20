@@ -32,7 +32,7 @@ This project is a timed Coding Quiz to test the user's knowledge of Javascript. 
 
 ## Usage
 
-- Go to [Deployed Github Page](insert Github link here)
+- Go to [Deployed Github Page](https://twashke.github.io/Timed-Coding-Quiz/)
 - Click the Start Game button to play
 - Beat the clock and answer at least one question right to win.
 - For every question that is answered wrong, 10 seconds are deducted from the clock.
