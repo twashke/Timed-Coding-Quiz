@@ -5,10 +5,17 @@
     background-color: black;
 }
 
-/* Header h1 Styling */
-header h1 {
+/* h1 Styling */
+h1 {
     font-size: 3rem;
     color: purple;
+}
+
+h2 {
+    font-size: 1.5rem;
+    background: white;
+    color: purple;
+    font-style: italic;
 }
 
 /* Body Styling */

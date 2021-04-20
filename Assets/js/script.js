@@ -15,7 +15,6 @@ var gameAnswerEl = document.querySelector(".game-answer");
 var currentQuestion = null;
 var gameTimer;
 var answeredCorrect = 0;
-var answeredIncorrect =0 ;
 var userScore;
 
 // Variable questions for Quiz
@@ -131,10 +130,6 @@ function handleAnswerPress(event) {
     console.log("Answer is: ", isCorrect);
     // If the user's answer is wrong
     if (!isCorrect) {
-        // Subtract one point to answeredCorrect variable
-        answeredIncorrect++;
-        // Console log answer
-        console.log("Tally incorrect: ", answeredIncorrect);
         // Send user message that the answer is  wrong
         gameAnswerEl.innerHTML = "Incorrect!";
         // Deduct 10 seconds from the time clock 
@@ -145,6 +140,8 @@ function handleAnswerPress(event) {
     } else {
         // Add one point to answeredCorrect variable
         answeredCorrect++;
+        // Add to user Score
+        userScore += answeredCorrect;
         // Console log answer
         console.log("Tally correct: ", answeredCorrect);
         // console log the user's answer
@@ -173,15 +170,14 @@ function handleAnswerPress(event) {
             choiceB.innerHTML = "";
             choiceC.innerHTML = "";
             choiceD.innerHTML = "";
-            //  Add User Score from correct or wrong questions
-            userScore = secondsLeft + answeredCorrect - answeredIncorrect;
+                // If user sccore is equal or less than zero or no questions were answered correctly.
                 if (userScore <= 0 || answeredCorrect === 0) {
                 // Alert for user to try again
                 alert("Your score was 0 so there is no high score to record.\nClick Start Game to try again!");
                 location.reload();
                 } else {
                 // Send alert to user
-                alert("Your score is " + userScore + "\nYou got " + answeredCorrect + " right out of 6!\n Check out your high score in the top left corner!");
+                alert("Your score is " + secondsLeft+ "\nYou got " + answeredCorrect + " right out of 6!\n Check out your high score in the top left corner!");
                 enterInitials();
                 location.reload();
                 }
