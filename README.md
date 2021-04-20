@@ -27,7 +27,7 @@ This project is a timed Coding Quiz to test the user's knowledge of Javascript. 
 
 ## Installation
 
-- Open [Timed Coding Quiz](insert Github link here) 
+- Open [Timed Coding Quiz](https://twashke.github.io/Timed-Coding-Quiz/) 
 - Or, open index.html in the internet browser.
 
 ## Usage
